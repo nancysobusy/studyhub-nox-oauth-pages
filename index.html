@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Study Hub / NOX Cloud Sync is a personal-use utility for synchronizing selected TOEFL learning data with Google Drive.">
+  <meta name="color-scheme" content="light">
+  <title>Study Hub / NOX Cloud Sync</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="shell">
+    <header class="masthead">
+      <a class="brand" href="./">Study Hub <span>/ NOX Sync</span></a>
+      <nav aria-label="Main navigation"><a aria-current="page" href="./">Overview</a><a href="privacy.html">Privacy policy</a></nav>
+    </header>
+    <main>
+      <section class="hero" aria-labelledby="main-title">
+        <div class="eyebrow">Personal utility · In development</div>
+        <h1 id="main-title">Private learning data.<br><em>Purposeful synchronization.</em></h1>
+        <p class="lead">Study Hub / NOX Cloud Sync is a personal-use synchronization utility that helps its owner move selected TOEFL learning summaries between a Windows Study Hub installation, a private Google Drive folder, and an authorized NOX device.</p>
+        <div class="actions"><a class="primary" href="privacy.html">Read the privacy policy <span aria-hidden="true">↗</span></a><a class="secondary" href="https://github.com/nancysobusy/studyhub-nox-oauth-pages">Public site repository <span aria-hidden="true">↗</span></a></div>
+      </section>
+      <section class="section" aria-labelledby="how-it-works">
+        <div class="section-head"><h2 id="how-it-works">How it works</h2><p>Only the data required for the approved learning workflow is synchronized.</p></div>
+        <div class="features">
+          <article><div class="number">01</div><h3>Study Hub on Windows</h3><p>Exports selected Coach summaries and separately approved analytics evidence. The original SQLite learning database remains on the user's computer.</p></article>
+          <article><div class="number">02</div><h3>Private Google Drive</h3><p>Stores selected JSON files in folders controlled by the Google account owner. OAuth is used to authorize Google Drive access.</p></article>
+          <article><div class="number">03</div><h3>NOX and optional AI review</h3><p>An authorized NOX device can read cloud files. The owner may separately connect Google Drive to ChatGPT for learning-plan review; plan execution requires distinct approval.</p></article>
+        </div>
+      </section>
+      <section class="section narrow" aria-labelledby="permissions">
+        <h2 id="permissions">Google permissions</h2>
+        <p><strong>Windows synchronization:</strong> <code>drive.file</code> permits reading and modifying files created or opened through this application's authorization. <strong>NOX read-only connection:</strong> <code>drive.readonly</code> permits read-only access across the Google Drive account; configuring a preferred sync folder in the client does not reduce the OAuth scope itself.</p>
+        <p>Access can be revoked by the account owner in <a href="https://myaccount.google.com/permissions">Google Account third-party connections</a>. This website does not request Google login credentials and does not host learning records.</p>
+      </section>
+      <section class="language" lang="zh-CN" aria-labelledby="cn">
+        <h2 id="cn">中文说明</h2>
+        <p>Study Hub / NOX Cloud Sync 是一个仅供个人使用的学习数据同步工具。它通过 Google Drive 在 Windows Study Hub、获授权的 NOX 设备及用户主动连接的教学分析工具之间共享<strong>经过选择的</strong>托福学习摘要和证据数据。完整 SQLite 数据库、NOX 人格记忆和 OAuth 密钥不会通过本网站公开。</p>
+        <p>Windows 端采用 <code>drive.file</code> 授权，NOX 只读端采用 <code>drive.readonly</code> 授权。后者虽然只用于指定同步目录，但授权范围本身覆盖 Google Drive 中可访问的文件。具体见 <a href="privacy.html">隐私政策</a>。</p>
+      </section>
+    </main>
+    <footer><span>Study Hub / NOX Cloud Sync · Personal project · 2026</span><div><a href="privacy.html">Privacy</a><a href="https://github.com/nancysobusy/studyhub-nox-oauth-pages/issues">Contact / Feedback</a></div></footer>
+  </div>
+</body>
+</html>
